@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './App.css';
 import Gifs from './Components/Gifs'
 import Like from './Components/Like'
 
@@ -9,9 +9,8 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Gifs />
-        <br />
         <Like />
-        </div>
+      </div>
     </div>
   );
   

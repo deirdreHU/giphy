@@ -1,1 +1,0 @@
-{"version":3,"sources":["styles.css"],"names":[],"mappings":"AACA,KACE,sBAAuB,CACvB,iBACF,CAEA,SACE,YAAa,CACb,cAAe,CACf,sBACF","file":"main.fe1fb73a.chunk.css","sourcesContent":["\n.App {\n  font-family: sans-serif;\n  text-align: center;\n}\n\n.gif-row {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content:center;\n}\n"]}

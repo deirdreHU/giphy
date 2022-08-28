@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Gifs.css"
 
 
 const Gifs = () => {
@@ -41,24 +42,27 @@ const Gifs = () => {
 
 
     return (
-        <div className="App">
+        <div className="main">
             
             <h1>Giphy</h1>
 
-            <form onSubmit={handleSubmit}>
-                <input onChange={handleChange} placeholder="type of giphy" />
-                <button>Submit</button>
-            </form>
-            <br />
-            <br />
-            {gifSrc.image_url ? (
-                <div className="gif-row">
-                    < img src={gifSrc.image_url} alt="" />
-                </div>
-            ) : (
-                <h2>Pull random gifs from Giphy</h2>
-            )
-            }
+            <div className="search">
+                <form onSubmit={handleSubmit}>
+                    <input className="input" onChange={handleChange} placeholder="type of giphy" />
+                    <button className="submit-button">Search</button>
+                </form>
+            </div>
+
+            <div>
+                {gifSrc.image_url ? (
+                    <div className="gif-row">
+                        < img src={gifSrc.image_url} alt="" />
+                    </div>
+                ) : (
+                    <h2>Pull random gifs from Giphy</h2>
+                )
+                }
+            </div>
         </div>
       )
 
